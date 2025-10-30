@@ -1,0 +1,224 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #004d99; /* Biru tua sekolah */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #003366; /* Biru lebih gelap saat hover */
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #ff6600; /* Oranye/Aksen */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #28a745; /* Hijau (untuk PPDB/Aksi utama) */
+    color: white;
+}
+
+.btn-large:hover {
+    background-color: #1e7e34;
+}
+
+
+/* HERO SECTION */
+.hero {
+    background: url('dummy_school_bg.jpg') no-repeat center center/cover; /* Ganti dengan path gambar Anda */
+    background-color: #3498db; /* Fallback color (Biru muda) */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay gelap agar teks terbaca */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #004d99;
+}
+
+/* ABOUT/PROFIL SECTION */
+.about {
+    background-color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.feature-item h4 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+/* CALL TO ACTION (CTA) */
+.cta {
+    background-color: #004d99;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+/* MEDIA QUERIES untuk responsif dasar */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navbar nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
